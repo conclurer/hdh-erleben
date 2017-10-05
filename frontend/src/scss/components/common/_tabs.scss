@@ -1,0 +1,58 @@
+//
+// Tabs
+//
+.tabs {
+  width: 100%;
+  background-color: $medium-gray;
+  border-top: 1px solid $white;
+  &-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+
+//Single tab
+.tab {
+  border-left: 1px solid $white;
+  border-right: 1px solid $white;
+  text-align: center;
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  @include breakpoint(medium) {
+    width: 120px;
+    flex-grow: 0;
+  }
+  &-label {
+    font-size: rem-calc(6.5);
+    color: $dark-gray;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    @include breakpoint(medium) {
+      font-size: rem-calc(10);
+    }
+  }
+  &-icon {
+    padding: $spacing/4 0;
+    .svg {
+      max-height: 26px;
+      max-width: 26px;
+      fill: $dark-gray;
+    }
+  }
+  &--active {
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -14px;
+      left: 0px;
+      right: 0px;
+      height: 15px;
+      background-color: $medium-gray;
+      z-index: $z-index-house;
+    }
+  }
+}
