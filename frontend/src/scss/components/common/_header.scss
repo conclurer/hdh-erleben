@@ -12,11 +12,16 @@ $header-height-mobile: 48px;
     flex-wrap: wrap;
     align-items: stretch;
     height: $header-height-mobile;
-
+    @include breakpoint(large) {
+      flex-wrap: nowrap;
+      align-items: flex-end;
+    }
   }
   &-logo {
     flex-grow: 1;
     align-self: flex-end;
+    padding: $spacing;
+    font-size: rem-calc(21);
   }
   &-toggle {
     padding: $spacing;
@@ -47,6 +52,9 @@ $header-height-mobile: 48px;
         @include hidden();
       }
     }
+    @include breakpoint(large) {
+      @include hidden();
+    }
   }
   &-navigation {
     margin: 0;
@@ -55,13 +63,32 @@ $header-height-mobile: 48px;
       text-transform: uppercase;
       letter-spacing: .1em;
       padding: $spacing/2 0;
+      &--hidden {
+        @include breakpoint(large) {
+          @include hidden();
+        }
+      }
+      &--active {
+        font-weight: $global-weight-bold;
+      }
+      @include breakpoint(large) {
+        font-size: rem-calc(13);
+        padding: $spacing $spacing/2;
+        letter-spacing: 0;
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+    @include breakpoint(large) {
+      display: flex;
+      align-items: center;
     }
   }
   &-menu {
-    position: absolute;
     @include hidden();
     &--active {
-      @include breakpoint(small only) {
+      @include breakpoint(medium down) {
         display: block;
         visibility: visible;
         position: absolute;
@@ -75,12 +102,15 @@ $header-height-mobile: 48px;
         z-index: $z-index-tower;
       }
     }
+    @include breakpoint(large) {
+      display: block;
+      visibility: visible;
+    }
   }
   &-search {
-    width: 100%;
     @include hidden();
     &--active {
-      @include breakpoint(small only) {
+      @include breakpoint(medium down) {
         visibility: visible;
         position: absolute;
         top: $header-height-mobile;
@@ -98,9 +128,17 @@ $header-height-mobile: 48px;
         z-index: $z-index-tower;
       }
     }
+    @include breakpoint(large) {
+      display: block;
+      visibility: visible;
+    }
     &-title {
       font-size: rem-calc(21);
       text-transform: uppercase;
+      color: $dark-gray;
+      @include breakpoint(large) {
+        @include hidden();
+      }
     }
     &-form {
       padding: $spacing;
@@ -109,6 +147,17 @@ $header-height-mobile: 48px;
         border-color: $white;
         &:focus {
           border-color: $white;
+        }
+        @include breakpoint(large) {
+          border-color: $medium-gray;
+          border-radius: 4px;
+          padding: 2px $spacing;
+          font-size: rem-calc(13);
+          height: 32px;
+          margin-bottom: 0;
+          &:focus {
+            border-color: $dark-gray;
+          }
         }
       }
     }

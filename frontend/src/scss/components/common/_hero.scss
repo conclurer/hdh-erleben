@@ -1,0 +1,44 @@
+//
+// Hero
+//
+.hero {
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  background-position: 35% center;
+  background-size: cover;
+  @include breakpoint(medium) {
+    min-height: 400px;
+    background-position: 20% center;
+  }
+  @include breakpoint(large) {
+    min-height: 500px;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+  }
+  &-inner {
+    @include hidden();
+    @include breakpoint(large) {
+      visibility: visible;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &-headline {
+    width: 42%;
+    color: $dark-gray;
+    padding: $spacing;
+    h1,h2 {
+      font-weight: $global-weight-normal;
+    }
+    p {
+      font-size: rem-calc(21);
+      margin-bottom: 0;
+    }
+    @include breakpoint(xlarge) {
+      width: 38%;
+    }
+  }
+}
