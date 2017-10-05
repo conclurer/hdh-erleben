@@ -2,8 +2,16 @@
 //
 //   Common used CSS
 //
+body {
+  font-size: rem-calc(15);
+}
 
-
+p a {
+  color: $primary-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 //Visibility
 .hidden {
   display: none !important;
