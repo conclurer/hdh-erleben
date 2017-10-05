@@ -1,0 +1,17 @@
+//
+// Grid helpers
+//
+.container {
+  width: 100%;
+  max-width: $global-width;
+  margin: 0 auto;
+  &--full {
+    max-width: 100%;
+  }
+  &--medium {
+    max-width: $global-width * .75;
+  }
+  &--small {
+    max-width: $global-width * .55;
+  }
+}
