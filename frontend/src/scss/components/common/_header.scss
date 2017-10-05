@@ -1,0 +1,83 @@
+//
+// Header
+//
+$header-height-mobile: 48px;
+
+.header {
+  background-color: $white;
+  position: relative;
+  width: 100%;
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: $header-height-mobile;
+
+  }
+  &-logo {
+    flex-grow: 1;
+    align-self: flex-end;
+  }
+  &-toggle {
+    padding: $spacing;
+    width: 50px;
+    align-self: stretch;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    .svg {
+      max-width: 24px;
+      max-height: 24px;
+      fill: $dark-gray;
+    }
+    //Toggle X symbol
+    .svg--close {
+      @include hidden();
+      max-width: 20px;
+      max-height: 20px;
+    }
+    &--active {
+      .svg--close {
+        display: block;
+        visibility: visible;
+      }
+      .svg--icon {
+        @include hidden();
+      }
+    }
+  }
+  &-search {
+
+  }
+  &-menu {
+    position: absolute;
+    @include hidden();
+    &--active {
+      display: block;
+      visibility: visible;
+      position: absolute;
+      top: $header-height-mobile;
+      left: $spacing*3;
+      right: $spacing*3;
+      width: auto;
+      background-color: $light-gray;
+    }
+  }
+
+  &-search {
+    width: 100%;
+    @include hidden();
+    &--active {
+      display: block;
+      visibility: visible;
+      position: absolute;
+      top: $header-height-mobile;
+      left: $spacing*3;
+      right: $spacing*3;
+      width: auto;
+      background-color: $light-gray;
+    }
+  }
+}
