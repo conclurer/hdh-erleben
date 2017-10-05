@@ -18,6 +18,7 @@
   border-left: 1px solid $white;
   border-right: 1px solid $white;
   text-align: center;
+  min-width: 60px;
   width: 100%;
   flex-grow: 1;
   position: relative;
@@ -26,10 +27,16 @@
     flex-grow: 0;
   }
   &-label {
-    font-size: rem-calc(6.5);
+    font-size: 6px;
     color: $dark-gray;
     text-transform: uppercase;
     padding-bottom: 2px;
+    @include breakpoint(360px) {
+      font-size: 7px;
+    }
+    @include breakpoint(400px) {
+      font-size: 8px;
+    }
     @include breakpoint(medium) {
       font-size: rem-calc(10);
     }
