@@ -1,0 +1,24 @@
+//
+// Columns for the homepage
+//
+.colhome {
+  padding: $spacing*2 0;
+  &-col {
+    @include grid-col(12);
+    @include breakpoint(medium) {
+      @include grid-col(4);
+    }
+  }
+  &-inner {
+    background-color: $medium-gray;
+    margin-bottom: $spacing;
+    &-meta {
+      padding: $spacing;
+      text-align: center;
+      color: $dark-gray;
+      h2,h3 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
