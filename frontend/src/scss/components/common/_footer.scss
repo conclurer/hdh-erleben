@@ -1,0 +1,31 @@
+//
+// Footer
+//
+.footer {
+  background-color: $dark-gray;
+  color: $white;
+  padding-bottom: 50px;
+  @include breakpoint(medium) {
+    padding-bottom: 100px;
+  }
+  &-inner {
+    margin: 0;
+    padding: $spacing;
+    list-style: none;
+    &-item {
+      color: $white;
+      text-transform: uppercase;
+      @include breakpoint(medium) {
+        padding: $spacing;
+      }
+      & a:hover {
+        color: $white;
+      }
+    }
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

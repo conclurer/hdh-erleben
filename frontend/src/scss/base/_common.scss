@@ -5,6 +5,9 @@
 body {
   font-size: rem-calc(15);
 }
+a {
+  color: inherit;
+}
 
 p a {
   color: $primary-color;
