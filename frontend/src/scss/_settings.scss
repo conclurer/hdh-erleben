@@ -61,7 +61,7 @@ $z-index-clouds : 9998;
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1140);
+$global-width: rem-calc(1080);
 $global-lineheight: 1.5;
 $foundation-palette: (
         primary: #000000,
@@ -124,9 +124,9 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, Courier, monospace;
 $header-styles: (
         small: (
-                'h1': ('font-size': 28),
-                'h2': ('font-size': 17),
-                'h3': ('font-size': 17),
+                'h1': ('font-size': 27),
+                'h2': ('font-size': 21),
+                'h3': ('font-size': 18),
                 'h4': ('font-size': 15),
                 'h5': ('font-size': 15),
                 'h6': ('font-size': 15),

@@ -3,6 +3,10 @@
 //
 .colhome {
   padding: $spacing*2 0;
+  background-color: $medium-gray;
+  @include breakpoint(medium) {
+    background-color: transparent;
+  }
   &-col {
     @include grid-col(12);
     @include breakpoint(medium) {
@@ -18,6 +22,14 @@
       color: $dark-gray;
       h2,h3 {
         text-transform: uppercase;
+      }
+    }
+    &-image {
+      max-height: 300px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

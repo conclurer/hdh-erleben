@@ -5,6 +5,7 @@
   width: 100%;
   max-width: $global-width;
   margin: 0 auto;
+  @include clearfix();
   &--full {
     max-width: 100%;
   }
