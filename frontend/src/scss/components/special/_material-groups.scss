@@ -26,14 +26,18 @@
 
 //Single group
 .group {
-  background-color: $medium-gray;
+  background-color: $light-gray;
   padding: $spacing*2 $spacing;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @include breakpoint(medium) {
-    padding: $spacing*3 $spacing;
+    padding: $spacing*4 $spacing;
+    transition: all .1s;
+    &:hover {
+      background-color: $medium-gray;
+    }
   }
   &-title {
     font-weight: $global-weight-normal;
