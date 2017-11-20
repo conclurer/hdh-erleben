@@ -8,7 +8,7 @@ $header-height-mobile: 48px;
   position: relative;
   width: 100%;
   @include breakpoint(large) {
-    padding-top: $spacing;
+    padding-top: $spacing*3;
   }
   &-inner {
     display: flex;
@@ -35,23 +35,23 @@ $header-height-mobile: 48px;
     align-items: center;
     justify-content: flex-end;
     cursor: pointer;
-    .svg {
+    .icon {
       max-width: 24px;
       max-height: 24px;
       fill: $dark-gray;
     }
     //Toggle X symbol
-    .svg--close {
+    .icon--close {
       @include hidden();
       max-width: 20px;
       max-height: 20px;
     }
     &--active {
-      .svg--close {
+      .icon--close {
         display: block;
         visibility: visible;
       }
-      .svg--icon {
+      .icon--icon {
         @include hidden();
       }
     }

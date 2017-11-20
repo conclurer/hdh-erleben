@@ -1,0 +1,65 @@
+//
+// Business entry
+//
+.business {
+  background-color: $white;
+  margin: $spacing*2 $spacing;
+  box-shadow: 8px 8px 12px 0px rgba($dark-gray,.8);
+  &-head {
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  &-image {
+    @include breakpoint(medium) {
+      padding: $spacing;
+      width: 50%;
+      img {
+        max-width: 420px;
+        height: auto;
+      }
+    }
+  }
+  &-meta {
+    padding: $spacing;
+    h1 {
+      font-weight: $global-weight-normal;
+      text-transform: uppercase;
+      margin-bottom: $spacing/2;
+    }
+    @include breakpoint(medium) {
+      flex-grow: 1;
+      padding-top: $spacing*4;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-times {
+    color: $alert-color;
+    @include breakpoint(medium) {
+      margin-top: $spacing*2;
+    }
+  }
+  &-content {
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  &-description {
+   padding: $spacing;
+    @include breakpoint(medium) {
+      width: 50%;
+    }
+  }
+  &-location {
+    padding: $spacing;
+    @include breakpoint(medium) {
+      width: 50%;
+    }
+  }
+}
