@@ -19,15 +19,18 @@
       img {
         max-width: 420px;
         height: auto;
+        width: 100%;
       }
     }
   }
   &-meta {
     padding: $spacing;
+    color: darken($dark-gray,20%);
     h1 {
       font-weight: $global-weight-normal;
       text-transform: uppercase;
       margin-bottom: $spacing/2;
+      font-size: rem-calc(34);
     }
     @include breakpoint(medium) {
       flex-grow: 1;
@@ -36,11 +39,49 @@
         margin-bottom: 0;
       }
     }
+    &-slagline {
+      font-size: rem-calc(18);
+      text-transform: uppercase;
+      margin-bottom: $spacing*3;
+      display: block;
+    }
+    a {
+      color:  darken($dark-gray,20%);
+    }
+  }
+  &-social {
+    margin: $spacing*2 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    &-item {
+      margin-right: $spacing*2;
+      .icon {
+        max-width: 48px;
+        max-height: 48px;
+        fill: $dark-gray;
+      }
+      &:hover .icon {
+        fill: $primary-color;
+      }
+    }
   }
   &-times {
-    color: $alert-color;
+    margin: $spacing*2 0;
+    list-style: none;
     @include breakpoint(medium) {
       margin-top: $spacing*2;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include breakpoint(medium) {
+        max-width: 320px;
+      }
+    }
+    &-day {
+      flex-grow: 1;
     }
   }
   &-content {
@@ -53,13 +94,26 @@
   &-description {
    padding: $spacing;
     @include breakpoint(medium) {
-      width: 50%;
+      width: 75%;
     }
   }
   &-location {
     padding: $spacing;
     @include breakpoint(medium) {
+      width: 25%;
+    }
+  }
+  &-images {
+    //padding: $spacing;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &-item {
       width: 50%;
+      padding: $spacing;
+      @include breakpoint(medium) {
+        width: 25%;
+      }
     }
   }
 }
