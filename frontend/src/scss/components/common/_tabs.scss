@@ -63,3 +63,21 @@
     }
   }
 }
+
+//ABC-Bar instead of tabs
+.abc {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include breakpoint(medium) {
+    flex-wrap: nowrap;
+  }
+  &-item {
+    padding: $spacing $spacing/2;
+    color: $dark-gray;
+    width: 3.6%;
+  }
+}
