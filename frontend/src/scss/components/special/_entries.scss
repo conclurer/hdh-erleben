@@ -48,6 +48,7 @@
       text-transform: uppercase;
       font-weight: $global-weight-normal;
       font-size: rem-calc(21);
+      word-wrap: break-word;
     }
   }
   &-slugline {

@@ -150,6 +150,7 @@ gulp.task('build:svgs', function () {
                         run: function ($, file) {
                             $('svg').addClass('hidden');
                             $('[fill]').removeAttr('fill');
+                            $( 'title' ).remove();
                         },
                         parserOptions: {xmlMode: true}
                     }))
