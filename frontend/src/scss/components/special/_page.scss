@@ -1,0 +1,31 @@
+//
+// Regular two folded pages
+//
+
+//Single entry preview
+.basic {
+  display: block;
+  background-color: $light-gray;
+  box-shadow: 4px 4px 2px 1px $medium-gray;
+  padding-top: $spacing*2;
+  @include clearfix();
+  margin: $spacing*2 0;
+  &-left {
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      @include grid-col(6);
+    }
+  }
+  &-right {
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      @include grid-col(6);
+    }
+  }
+  &-main {
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+  }
+}

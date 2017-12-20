@@ -40,6 +40,9 @@
         font-size: rem-calc(24);
       }
     }
+    &--left {
+      text-align: left;
+    }
   }
   &-anchor {
     @include hidden();
