@@ -26,6 +26,9 @@
       justify-content: flex-end;
     }
   }
+  &--white &-headline {
+    color: $white;
+  }
   &-headline {
     width: 42%;
     color: $dark-gray;

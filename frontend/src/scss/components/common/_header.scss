@@ -25,6 +25,12 @@ $header-height-mobile: 48px;
     align-self: flex-end;
     padding: $spacing;
     font-size: rem-calc(21);
+    img {
+      height: 36px;
+      @include breakpoint(large) {
+        height: 54px;
+      }
+    }
   }
   &-toggle {
     padding: $spacing;
@@ -162,6 +168,11 @@ $header-height-mobile: 48px;
           &:focus {
             border-color: $dark-gray;
           }
+        }
+      }
+      &-action {
+        @include breakpoint(medium) {
+          @include hidden();
         }
       }
     }
