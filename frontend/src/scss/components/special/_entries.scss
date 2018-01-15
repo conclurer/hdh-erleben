@@ -37,13 +37,30 @@
       height: auto;
     }
   }
+  &-openingstate {
+    margin: 0 auto;
+    font-weight: $global-weight-bold;
+    display: block;
+    margin-top: $spacing;
+    font-size: 12px;
+    width: 120px;
+    background-color: #ffffff;
+    color: $dark-gray;
+    border-radius: 50em;
+    padding: $spacing/2 $spacing*2;
+  }
+  &--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &-meta {
     padding: $spacing*2 $spacing;
     text-align: center;
     @include breakpoint(medium) {
       padding: $spacing*2;
     }
-    h3,h4 {
+    h3, h4 {
       color: $dark-gray;
       text-transform: uppercase;
       font-weight: $global-weight-normal;

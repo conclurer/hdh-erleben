@@ -17,6 +17,16 @@
   }
 }
 
+.full {
+  @include grid-col(12);
+  &--center {
+    text-align: center;
+  }
+  &--padded {
+    padding-top: $spacing*2;
+    padding-bottom: $spacing*2;
+  }
+}
 .spacer {
   @include grid-col(12);
   padding-top:30px;
