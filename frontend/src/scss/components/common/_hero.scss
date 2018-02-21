@@ -29,6 +29,9 @@
   &--white &-headline {
     color: $white;
   }
+  &--top {
+    background-position: center top !important;
+  }
   &-headline {
     width: 42%;
     color: $dark-gray;

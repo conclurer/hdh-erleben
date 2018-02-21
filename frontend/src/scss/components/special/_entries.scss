@@ -43,7 +43,7 @@
     display: block;
     margin-top: $spacing;
     font-size: 12px;
-    width: 120px;
+    width: 160px;
     background-color: #ffffff;
     color: $dark-gray;
     border-radius: 50em;
@@ -82,6 +82,7 @@
   }
   &-logo {
     padding-bottom: $spacing;
+    height: 40px;
     img {
       max-height: 36px;
       width: auto;

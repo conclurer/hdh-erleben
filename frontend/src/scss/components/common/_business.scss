@@ -16,6 +16,7 @@
     @include breakpoint(medium) {
       padding: $spacing;
       width: 50%;
+      margin-top: 50px;
       img {
         max-width: 420px;
         height: auto;
@@ -50,7 +51,7 @@
     }
   }
   &-social {
-    margin: $spacing*2 0;
+    margin: $spacing 0;
     list-style: none;
     display: flex;
     align-items: center;
@@ -69,6 +70,7 @@
   &-times {
     margin: $spacing*2 0;
     list-style: none;
+    line-height: 1.3;
     @include breakpoint(medium) {
       margin-top: $spacing*2;
     }
@@ -94,13 +96,13 @@
   &-description {
    padding: $spacing;
     @include breakpoint(medium) {
-      width: 75%;
+      width: 50%;
     }
   }
   &-location {
     padding: $spacing;
     @include breakpoint(medium) {
-      width: 25%;
+      width: 50%;
     }
   }
   &-images {
@@ -115,5 +117,21 @@
         width: 25%;
       }
     }
+  }
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  margin-top: $spacing;
+  &-icon {
+    padding: $spacing;
+    line-height: 0;
+    .icon {
+      max-width: 24px;
+      max-height: 24px;
+    }
+  }
+  &-action {
   }
 }
