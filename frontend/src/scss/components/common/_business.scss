@@ -118,6 +118,21 @@
       }
     }
   }
+  &-membership {
+    padding: $spacing 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    &-item {
+      padding-right: $spacing*2;
+      padding-bottom: $spacing;
+      img {
+        max-height: 72px;
+      }
+    }
+  }
 }
 
 .route {

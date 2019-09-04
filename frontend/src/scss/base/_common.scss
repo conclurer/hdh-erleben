@@ -59,3 +59,15 @@ h1 {
     text-align: center;
   }
 }
+
+//Message
+.banner {
+  width: 100%;
+  background-color: $light-gray;
+  border-bottom: 1px solid $medium-gray;
+  text-align: center;
+  padding: $spacing*2 $spacing;
+  p {
+    margin-bottom: 0;
+  }
+}

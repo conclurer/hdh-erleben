@@ -1,0 +1,12 @@
+//
+// Overwrites Foundation
+//
+.button.primary, .button {
+  color: $white;
+  @include breakpoint(medium) {
+    &:hover {
+      color: $white;
+      background-color: #D62B00;
+    }
+  }
+}
