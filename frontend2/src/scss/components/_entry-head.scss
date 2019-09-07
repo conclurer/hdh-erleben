@@ -32,6 +32,19 @@
       font-size: rem-calc(21);
       padding: $spacing/2;
       display: inline;
+      img {
+        height:24px;
+        @include breakpoint(large) {
+          height: 36px;
+          margin-left: $spacing;
+          margin-right: $spacing;
+        }
+        @include breakpoint(xlarge) {
+          height: 44px;
+          margin-left: $spacing;
+          margin-right: $spacing;
+        }
+      }
     }
 
     @include breakpoint(medium) {

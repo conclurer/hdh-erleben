@@ -10,3 +10,13 @@
     }
   }
 }
+.button-separator {
+  height: 40px;
+  width: 1px;
+  display: inline-block;
+  background-color: rgba($white,.5);
+  margin-top: -.85em;
+  margin-bottom: -.85em;
+  margin-left: $spacing;
+  margin-right: $spacing;
+}
