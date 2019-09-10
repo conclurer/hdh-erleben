@@ -3,14 +3,19 @@
 //
 .sitenav {
 
-  width: 100%;
-  overflow-x: auto;
-  border-bottom: 1px solid $light-gray;
 
-  @include breakpoint(medium) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  border-bottom: 1px solid $light-gray;
+  background-color: $white;
+  &-inner {
+    width: 100%;
+    overflow-x: auto;
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: rem-calc($base-container-width);
+      margin: 0 auto;
+    }
   }
 
   &-items {
@@ -19,6 +24,9 @@
 
     display: flex;
     align-items: center;
+    @include breakpoint(medium) {
+      margin-left: -$spacing;
+    }
   }
   &-item {
     padding: $spacing;

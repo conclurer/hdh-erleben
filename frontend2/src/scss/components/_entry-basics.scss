@@ -1,0 +1,188 @@
+//
+// Entry page
+//
+.entry-basics {
+  padding: $spacing 0;
+  @include breakpoint(medium) {
+    padding: $spacing*4 0;
+  }
+  &-inner {
+    display: flex;
+    flex-direction: column-reverse;
+    @include breakpoint(medium) {
+      display: block;
+    }
+  }
+  &-text {
+    @include grid-col(12);
+    margin-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      @include grid-col(6)
+    }
+    @include breakpoint(large) {
+      @include grid-col(8)
+    }
+  }
+  &-businesshours {
+    @include grid-col(12);
+    margin-bottom: $spacing*2;
+
+    @include breakpoint(medium) {
+      @include grid-col(6)
+    }
+    @include breakpoint(large) {
+      @include grid-col(4)
+    }
+  }
+  &-actions {
+    padding: $spacing*2 $spacing;
+
+    @include breakpoint(medium) {
+      @include hidden();
+    }
+  }
+}
+
+.entrylink {
+  margin-bottom: $spacing*2;
+
+  &-title,&-more {
+    @include grid-col(12);
+    margin-bottom: $spacing*2;
+  }
+  &-more {
+    text-align: center;
+  }
+  &-item {
+    @include grid-col(12);
+    margin-bottom: $spacing;
+    @include breakpoint(medium) {
+      @include grid-col(4);
+
+      &:last-child:not(:first-child) {
+        float: left; //Stupid Foundation
+      }
+    }
+  }
+}
+
+.entrycontact {
+
+  &-title {
+    @include grid-col(12);
+    margin-bottom: $spacing*2;
+  }
+  &-cv {
+    margin-bottom: $spacing*2;
+
+    .button.primary {
+      margin-bottom: $spacing;
+    }
+    @include grid-col(12);
+    @include breakpoint(medium) {
+      @include grid-col(6);
+    }
+    @include breakpoint(large) {
+      @include grid-col(7);
+    }
+  }
+  &-map {
+    @include grid-col(12);
+    @include breakpoint(medium) {
+      @include grid-col(6);
+    }
+    @include breakpoint(large) {
+      @include grid-col(5);
+    }
+  }
+
+  &-group {
+    display: flex;
+    align-items: flex-start;
+    &-icon {
+      color: $primary-color;
+      padding: $spacing;
+      width: 30px;
+      font-size:20px;
+    }
+    &-desc {
+      padding: $spacing;
+    }
+  }
+}
+
+.entryimages {
+  margin-bottom: $spacing*2;
+  &-title {
+    @include grid-col(12);
+    margin-bottom: $spacing*2;
+  }
+  &-banner {
+    @include grid-col(12);
+    margin-bottom: $spacing;
+  }
+
+  &-item {
+    @include grid-col(6);
+    margin-top:$spacing;
+    margin-bottom: $spacing;
+    @include breakpoint(medium) {
+      @include grid-col(4);
+    }
+    a {
+      transition:.1s;
+      background-color: $primary-color;
+      @include breakpoint(medium) {
+        &:hover {
+          opacity: .67;
+        }
+      }
+    }
+    img {
+      border-radius: $global-radius;
+    }
+    &:last-child:not(:first-child) {
+      float: left !important; //Stupid Foundation
+    }
+  }
+}
+.entryaction {
+  text-align: center;
+  padding: $spacing*2;
+}
+
+// Custom Components
+.business {
+  &-times {
+    margin: 0;
+    list-style: none;
+    line-height: 1.8;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include breakpoint(medium) {
+        max-width: 320px;
+      }
+    }
+    &-day {
+      flex-grow: 1;
+    }
+  }
+}
+
+
+.cityschex {
+  display: flex;
+  align-items: center;
+  padding-top: $spacing;
+  img {
+    width: 64px;
+  }
+  &-inner {
+    padding: $spacing;
+    color: $dark-gray;
+    font-size: rem-calc(14);
+    line-height: 1.3;
+  }
+}

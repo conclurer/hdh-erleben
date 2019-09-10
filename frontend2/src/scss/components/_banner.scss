@@ -1,0 +1,37 @@
+//
+// Simple Banner
+//
+.banner {
+  background-color: $light-gray;
+  border-radius: $global-radius;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @include breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &-icon {
+    padding: $spacing;
+    @include breakpoint(medium) {
+      padding: $spacing*2;
+      padding-right: 0;
+    }
+  }
+  &-text {
+    padding: $spacing;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      padding: $spacing*2;
+      text-align: left;
+      flex-grow: 1;
+    }
+  }
+  &-actions {
+    padding: $spacing;
+    @include breakpoint(medium) {
+      padding: $spacing*2;
+    }
+  }
+}
