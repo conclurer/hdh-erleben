@@ -1,0 +1,148 @@
+//
+// Header + Nav
+//
+
+$header-height-mobile: 70px;
+
+.header {
+
+  &-inner {
+    width: 100%;
+
+    height: $header-height-mobile;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include breakpoint(medium) {
+      flex-wrap: nowrap;
+    }
+    @include breakpoint(large) {
+      max-width: rem-calc(1280);
+      margin: 0 auto;
+      border-bottom: none;
+    }
+    &--has-border {
+      border-bottom:1px solid $light-gray;
+    }
+  }
+
+  &-logo {
+    width: 50%;
+    padding: $spacing;
+    img {
+      width: auto;
+      height: 44px;
+    }
+    @include breakpoint(medium) {
+      width: 25%;
+    }
+    @include breakpoint(large) {
+      padding: 0;
+      width: 20%;
+      flex-grow: 1;
+    }
+  }
+  &-toggle {
+    width: 50%;
+    padding: $spacing;
+    text-align: right;
+    &-button {
+      padding: $spacing 0;
+      cursor: pointer;
+      display: inline-block;
+    }
+    @include breakpoint(medium) {
+      @include hidden();
+    }
+  }
+  &-navigation {
+    position: absolute;
+    top: $header-height-mobile;
+    background-color: $white;
+    visibility: hidden;
+    opacity: 0;
+    transition:.1s;
+
+
+    @include breakpoint(small only) {
+      &--is-active {
+        visibility: visible;
+        opacity: 1;
+        transform:translateY(-1px);
+        padding: $spacing;
+        width: 100%;
+        z-index: $z-index-skyscraper
+      }
+    }
+
+    .search {
+      padding: $spacing 0;
+    }
+    @include breakpoint(medium) {
+      visibility: visible;
+      opacity: 1;
+      flex-grow: 1;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      top: auto;
+      background-color: transparent;
+
+      .search-input {
+        max-width: 130px;
+      }
+    }
+    @include breakpoint(large) {
+      .search-input {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+// Navigation
+.navigation {
+  list-style: none;
+  margin: 0;
+  &-item {
+    padding: $spacing/2 0;
+    a {
+      display: block;
+      margin: (-$spacing/2) (0);
+      padding: $spacing/2 0;
+    }
+  }
+
+  @include breakpoint(medium) {
+    display: flex;
+    align-items: center;
+    &-item {
+      padding: $spacing $spacing/2;
+
+      a {
+        padding: $spacing $spacing/2;
+        margin: (-$spacing) (-$spacing/2);
+      }
+      &-icon {
+        @include hidden();
+      }
+    }
+  }
+  @include breakpoint(large) {
+    &-item {
+      padding: $spacing $spacing*2;
+
+      a {
+        padding: $spacing $spacing*2;
+        margin: (-$spacing) (-$spacing*2);
+      }
+      &-icon {
+        display: inline-block;
+        visibility: visible;
+      }
+    }
+  }
+}

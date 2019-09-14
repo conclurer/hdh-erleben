@@ -1,0 +1,29 @@
+//
+// Search components
+//
+
+// Single input
+.search {
+  display: flex;
+  align-items: stretch;
+
+  &-input {
+    margin-bottom: 0;
+    border-color: $light-gray;
+    border-top-left-radius: $global-radius;
+    border-bottom-left-radius: $global-radius;
+    height: 40px;
+    &:focus {
+      border-color: $light-gray;
+      background-color: $light-gray;
+    }
+  }
+  &-submit {
+    padding: $spacing $spacing*2;
+    background-color: $light-gray;
+    color: $primary-color;
+    border-radius: 0;
+    border-top-right-radius: $global-radius;
+    border-bottom-right-radius: $global-radius;
+  }
+}
