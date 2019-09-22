@@ -1,0 +1,21 @@
+//
+// Basic page
+//
+.basicpage {
+
+  &-title {
+    @include grid-col(12);
+    padding-top: $spacing*2;
+    padding-bottom: $spacing;
+    @include breakpoint(medium) {
+      padding-top: 50px;
+    }
+  }
+  &-inner{
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      padding-bottom:50px;
+    }
+  }
+}

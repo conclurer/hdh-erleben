@@ -2,8 +2,12 @@
 //
 //   Common used CSS
 //
+html {
+  background-color: $light-gray;
+}
 body {
   font-size: rem-calc(17);
+  background-color: $white;
 }
 a {
   color: inherit;
