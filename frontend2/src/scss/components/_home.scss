@@ -1,0 +1,41 @@
+//
+// Homepage elements
+//
+
+.home {
+  padding-bottom: $spacing*2;
+  &-title {
+    @include grid-col(12);
+    padding-top: $spacing*2;
+    padding-bottom: $spacing;
+    @include breakpoint(large) {
+      padding-bottom: $spacing*2;
+    }
+  }
+
+  &-tile {
+    @include grid-col(12);
+    padding-bottom: $spacing;
+
+    @include breakpoint(medium) {
+      @include grid-col(6);
+      padding-bottom: $spacing*2;
+    }
+    @include breakpoint(large) {
+      @include grid-col(4);
+    }
+    &:last-child:not(:first-child) {
+      float: left !important;
+    }
+  }
+
+  &-more {
+    @include grid-col(12);
+    padding: $spacing;
+    text-align: center;
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
