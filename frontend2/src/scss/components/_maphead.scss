@@ -1,0 +1,20 @@
+//
+// Header for a map
+//
+.maphead {
+  &-inner {
+    background-color: $light-gray;
+    min-height: 280px;
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+      min-height: 320px;
+    }
+    @include breakpoint(large) {
+      min-height: 400px;
+    }
+    @include breakpoint(xlarge) {
+      min-height: 450px;
+    }
+  }
+}
