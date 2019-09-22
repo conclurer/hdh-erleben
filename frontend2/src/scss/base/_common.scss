@@ -43,5 +43,6 @@ p a {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: $z-index-skyscraper;
   }
 }

@@ -2,12 +2,13 @@
 // Directory pages
 //
 .directory {
+  padding-bottom: $spacing*2;
   &-title {
     @include grid-col(12);
     padding-top: $spacing*2;
     padding-bottom: $spacing*2;
   }
-  &-entry {
+  &-category {
     @include grid-col(12);
     padding-bottom: $spacing;
     @include breakpoint(medium) {
@@ -22,13 +23,43 @@
     }
   }
 
-  // Single tile
+  // Entry
+  &-entry {
+    @include grid-col(12);
+    padding-bottom: $spacing;
+    @include breakpoint(medium) {
+      @include grid-col(6);
+      padding-bottom: $spacing*2;
+    }
+    @include breakpoint(large) {
+      @include grid-col(4);
+    }
+    &:last-child:not(:first-child) {
+      float: left !important;
+    }
+  }
+
+  &-zero {
+    @include grid-col(12);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+
+  // Single tile of a category
   &-tile {
-    min-height: 200px;
+    min-height: 150px;
     background-size: cover;
     width: 100%;
     display: block;
     position: relative;
+    @include breakpoint(medium) {
+      min-height: 200px;
+    }
     &-inner {
       position: absolute;
       top: 0;
@@ -39,7 +70,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: $white;
+      color: #fff;
+      transition:.1s;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba($primary-color,1);
+      }
     }
   }
 }

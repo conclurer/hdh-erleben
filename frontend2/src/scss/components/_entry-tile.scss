@@ -1,0 +1,37 @@
+//
+// Entry tile for previews
+//
+.entrytile {
+  padding-bottom: $spacing;
+  &-image {
+    position: relative;
+    padding-bottom: $spacing;
+    display: block;
+    img {
+      width: 100%;
+    }
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+  &-title {
+    color: $primary-color;
+  }
+  &-open {
+    position: absolute;
+    bottom: $spacing*2;
+    right: $spacing;
+    background-color: $white;
+    display: block;
+    padding: $spacing/2;
+    .far {
+      color: $success-color;
+    }
+  }
+
+  &-link {
+    display: block;
+    color: $dark-gray;
+  }
+}

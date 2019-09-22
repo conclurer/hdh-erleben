@@ -6,6 +6,9 @@
 
   border-bottom: 1px solid $light-gray;
   background-color: $white;
+  z-index: $z-index-skyscraper;
+  position: relative;
+
   &-inner {
     width: 100%;
     overflow-x: auto;
@@ -15,6 +18,11 @@
       justify-content: space-between;
       max-width: rem-calc($base-container-width);
       margin: 0 auto;
+      z-index: $z-index-skyscraper;
+      position: relative;
+    }
+    select {
+      margin-bottom: 0;
     }
   }
 

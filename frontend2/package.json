@@ -38,7 +38,7 @@
     "run-sequence": "^1.1.5"
   },
   "scripts": {
-    "start": "gulp",
+    "start": "gulp watch",
     "build": "gulp"
   },
   "repository": {
