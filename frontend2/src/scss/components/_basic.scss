@@ -1,0 +1,65 @@
+//
+// Basic page
+//
+
+.basic {
+  &-title {
+    @include grid-col(12);
+    padding-top: $spacing*2;
+    padding-bottom: $spacing;
+    @include breakpoint(medium) {
+      padding-top: 50px;
+    }
+  }
+}
+.basicpage {
+
+  &-inner{
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      padding-bottom:50px;
+    }
+  }
+}
+
+// List
+.basiclist {
+
+  padding-bottom: $spacing*2;
+
+  &-item {
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+      padding-bottom: $spacing;
+      padding-top: $spacing;
+    }
+
+    &-image {
+      padding-bottom: $spacing;
+      img {
+        border-radius: $global-radius;
+      }
+
+      @include breakpoint(medium) {
+        padding-right: $spacing*2;
+        width: 33%;
+      }
+    }
+    &-meta {
+
+      a {
+        color: $primary-color;
+      }
+
+      @include breakpoint(medium) {
+        width: 67%;
+        padding: $spacing 0;
+      }
+    }
+  }
+}
