@@ -4,6 +4,9 @@
 
 .home {
   padding-bottom: $spacing*2;
+  &--background {
+    background-color: $light-gray;
+  }
   &-title {
     @include grid-col(12);
     padding-top: $spacing*2;
