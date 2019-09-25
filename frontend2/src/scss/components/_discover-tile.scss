@@ -1,0 +1,18 @@
+//
+// tile for an experience
+//
+.discovertile {
+  padding-bottom: $spacing;
+  line-height: 2;
+
+  &-title {
+    color: $primary-color;
+  }
+
+  &-categorie {
+    color: $dark-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

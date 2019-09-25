@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="de">
+
 <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
@@ -10,350 +11,549 @@
 
 
 </head>
+
 <body>
 
-<div class="header">
-    <div class="header-inner header-inner--has-border">
-        <div class="header-logo">
-            <a href="/">
-                <img alt="Heidenheim Erleben" src="logo.png"/>
-            </a>
+    <div class="header">
+        <div class="header-inner header-inner--has-border">
+            <div class="header-logo">
+                <a href="/">
+                    <img alt="Heidenheim Erleben" src="logo.png" />
+                </a>
+            </div>
+            <div class="header-toggle">
+                <span class="header-toggle-button" data-toggle="head-nav">
+                    <i class="far fa-bars"></i>
+                    Menü
+                </span>
+            </div>
+            <div class="header-navigation" data-toggler=".header-navigation--is-active" id="head-nav">
+                <form action="/" class="search" method="get">
+                    <input class="search-input" placeholder="Suchen ..." type="text" />
+                    <button class="search-submit" type="submit">
+                        <i class="far fa-search"></i>
+                    </button>
+                </form>
+                <ul class="navigation">
+                    <li class="navigation-item">
+                        <a href="#">
+                            <i class="navigation-item-icon far fa-compass"></i>
+                            Entdecken
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#">
+                            <i class="navigation-item-icon far fa-calendar"></i>
+                            Events
+                        </a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#">
+                            <i class="navigation-item-icon far fa-bars"></i>
+                            Infos
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="header-toggle">
-            <span class="header-toggle-button" data-toggle="head-nav">
-                <i class="far fa-bars"></i>
-                Menü
-            </span>
+    </div>
+    <div class="hero" style="background-image:url('https://abload.de/img/header-mockup74kfa.jpg');">
+        <!-- Move to bottom with .hero-inner--is-bottom !-->
+        <div class="hero-inner hero-inner--is-faded ">
+            <div class="hero-action">
+                <h1>Heidenheim - Die Einkaufsstadt, die alles hat</h1>
+                <form action="/" class="search" method="get">
+                    <input class="search-input" placeholder="Suchen ..." type="text" />
+                    <button class="search-submit" type="submit">
+                        <i class="far fa-search"></i>
+                    </button>
+                </form>
+                <ul class="hero-menu">
+                    <li class="hero-menu-item">
+                        <a href="#">Einkaufen</a>
+                    </li>
+                    <li class="hero-menu-item">
+                        <a href="#">Service</a>
+                    </li>
+                    <li class="hero-menu-item">
+                        <a href="#">Essen</a>
+                    </li>
+                    <li class="hero-menu-item">
+                        <a href="#">Markenfinder</a>
+                    </li>
+                    <li class="hero-menu-item">
+                        <a href="#">Parken</a>
+                    </li>
+                    <li class="hero-menu-item">
+                        <a href="#">Gutscheine</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="header-navigation" data-toggler=".header-navigation--is-active" id="head-nav">
-            <form action="/" class="search" method="get">
-                <input class="search-input" placeholder="Suchen ..." type="text"/>
-                <button class="search-submit" type="submit">
-                    <i class="far fa-search"></i>
-                </button>
-            </form>
-            <ul class="navigation">
-                <li class="navigation-item">
-                    <a href="#">
-                        <i class="navigation-item-icon far fa-compass"></i>
-                        Entdecken
+        <div class="hero-author">
+            "Skyline Dreams" von <a href="#">Philipp Reiner</a>
+        </div>
+    </div>
+    <div class="home">
+        <div class="container container--default" data-equalizer data-equalize-on="medium">
+            <div class="home-title">
+                <h3>In Heidenheim erleben</h3>
+            </div>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="experiencetile-image">
+                        <img src="//placekitten.com/400/300" alt="title" />
                     </a>
-                </li>
-                <li class="navigation-item">
-                    <a href="#">
-                        <i class="navigation-item-icon far fa-calendar"></i>
-                        Events
+                    <a href="#" class="experiencetile-title">
+                        <h3>Title of the Exp.</h3>
                     </a>
-                </li>
-                <li class="navigation-item">
-                    <a href="#">
-                        <i class="navigation-item-icon far fa-bars"></i>
-                        Infos
+                    <span class="experiencetile-owner">
+                        Modehaus Reinhard
+                    </span>
+                    <div class="experiencetile-details">
+                        <span class="experiencetile-details-date">
+                            31.02.2035
+                        </span>
+                        <span class="experiencetile-details-products">
+                            2 Angebote
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="experiencetile-image">
+                        <img src="//placekitten.com/400/300" alt="title" />
                     </a>
-                </li>
-            </ul>
+                    <a href="#" class="experiencetile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="experiencetile-owner">
+                        Modehaus Reinhard
+                    </span>
+                    <div class="experiencetile-details">
+                        <span class="experiencetile-details-date">
+                            31.02.2035
+                        </span>
+                        <span class="experiencetile-details-products">
+                            2 Angebote
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="experiencetile-image">
+                        <img src="//placekitten.com/400/300" alt="title" />
+                    </a>
+                    <a href="#" class="experiencetile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="experiencetile-owner">
+                        Modehaus Reinhard
+                    </span>
+                    <div class="experiencetile-details">
+                        <span class="experiencetile-details-date">
+                            31.02.2035
+                        </span>
+                        <span class="experiencetile-details-products">
+                            2 Angebote
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="experiencetile-image">
+                        <img src="//placekitten.com/400/300" alt="title" />
+                    </a>
+                    <a href="#" class="experiencetile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="experiencetile-owner">
+                        Modehaus Reinhard
+                    </span>
+                    <div class="experiencetile-details">
+                        <span class="experiencetile-details-date">
+                            31.02.2035
+                        </span>
+                        <span class="experiencetile-details-products">
+                            2 Angebote
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="experiencetile-image">
+                        <img src="//placekitten.com/400/300" alt="title" />
+                    </a>
+                    <a href="#" class="experiencetile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="experiencetile-owner">
+                        Modehaus Reinhard
+                    </span>
+                    <div class="experiencetile-details">
+                        <span class="experiencetile-details-date">
+                            31.02.2035
+                        </span>
+                        <span class="experiencetile-details-products">
+                            2 Angebote
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="experiencetile-image">
+                        <img src="//placekitten.com/400/300" alt="title" />
+                    </a>
+                    <a href="#" class="experiencetile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="experiencetile-owner">
+                        Modehaus Reinhard
+                    </span>
+                    <div class="experiencetile-details">
+                        <span class="experiencetile-details-date">
+                            31.02.2035
+                        </span>
+                        <span class="experiencetile-details-products">
+                            2 Angebote
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="home-more">
+                <a href="#">Alle Erlebnisse anzeigen</a>
+            </div>
+        </div>
+        <div class="container container--default" data-equalizer data-equalize-on="medium">
+            <div class="home-title">
+                <h3>Geschichten aus Heidenheim</h3>
+            </div>
+            <div class="home-tile">
+                <div class="storystile" data-equalizer-watch>
+                    <a href="#" class="storystile-image">
+                        <img src="//placekitten.com/400/500" alt="title" />
+                    </a>
+                    <a href="#" class="storystile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="storystile-owner">
+                        Nubuk Bike + Sport
+                    </span>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="storystile" data-equalizer-watch>
+                    <a href="#" class="storystile-image">
+                        <img src="//placekitten.com/400/500" alt="title" />
+                    </a>
+                    <a href="#" class="storystile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="storystile-owner">
+                        Nubuk Bike + Sport
+                    </span>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="storystile" data-equalizer-watch>
+                    <a href="#" class="storystile-image">
+                        <img src="//placekitten.com/400/500" alt="title" />
+                    </a>
+                    <a href="#" class="storystile-title">
+                        <h3>Title of the Exp.</h3>
+                    </a>
+                    <span class="storystile-owner">
+                        Nubuk Bike + Sport
+                    </span>
+                </div>
+            </div>
+            <div class="home-more">
+                <a href="#">Alle Artikel lesen</a>
+            </div>
         </div>
     </div>
-</div>
-<div class="hero" style="background-image:url('https://abload.de/img/header-mockup74kfa.jpg');">
-    <!-- Move to bottom with .hero-inner--is-bottom !-->
-    <div class="hero-inner hero-inner--is-faded ">
-        <div class="hero-action">
-            <h1>Heidenheim - Die Einkaufsstadt, die alles hat</h1>
-            <form action="/" class="search" method="get">
-                <input class="search-input" placeholder="Suchen ..." type="text"/>
-                <button class="search-submit" type="submit">
-                    <i class="far fa-search"></i>
-                </button>
-            </form>
-            <ul class="hero-menu">
-                <li class="hero-menu-item">
-                    <a href="#">Einkaufen</a>
-                </li>
-                <li class="hero-menu-item">
-                    <a href="#">Service</a>
-                </li>
-                <li class="hero-menu-item">
-                    <a href="#">Essen</a>
-                </li>
-                <li class="hero-menu-item">
-                    <a href="#">Markenfinder</a>
-                </li>
-                <li class="hero-menu-item">
-                    <a href="#">Parken</a>
-                </li>
-                <li class="hero-menu-item">
-                    <a href="#">Gutscheine</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="hero-author">
-        "Skyline Dreams" von <a href="#">Philipp Reiner</a>
-    </div>
-</div>
-<div class="home">
-    <div class="container container--default" data-equalizer data-equalize-on="medium">
-        <div class="home-title">
-            <h3>In Heidenheim erleben</h3>
-        </div>
-        <div class="home-tile">
-            <div class="experiencetile" data-equalizer-watch>
-                <a href="#" class="experiencetile-image">
-                    <img src="//placekitten.com/400/300"alt="title"/>
-                </a>
-                <a href="#" class="experiencetile-title">
-                    <h3>Title of the Exp.</h3>
-                </a>
-                <span class="experiencetile-owner">
-                    Modehaus Reinhard
-                </span>
-                <div class="experiencetile-details">
-                    <span class="experiencetile-details-date">
-                        31.02.2035
-                    </span>
-                    <span class="experiencetile-details-products">
-                        2 Angebote
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="home-tile">
-            <div class="experiencetile" data-equalizer-watch>
-                <a href="#" class="experiencetile-image">
-                    <img src="//placekitten.com/400/300"alt="title"/>
-                </a>
-                <a href="#" class="experiencetile-title">
-                    <h3>Title of the Exp.</h3>
-                </a>
-                <span class="experiencetile-owner">
-                    Modehaus Reinhard
-                </span>
-                <div class="experiencetile-details">
-                    <span class="experiencetile-details-date">
-                        31.02.2035
-                    </span>
-                    <span class="experiencetile-details-products">
-                        2 Angebote
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="home-tile">
-            <div class="experiencetile" data-equalizer-watch>
-                <a href="#" class="experiencetile-image">
-                    <img src="//placekitten.com/400/300"alt="title"/>
-                </a>
-                <a href="#" class="experiencetile-title">
-                    <h3>Title of the Exp.</h3>
-                </a>
-                <span class="experiencetile-owner">
-                    Modehaus Reinhard
-                </span>
-                <div class="experiencetile-details">
-                    <span class="experiencetile-details-date">
-                        31.02.2035
-                    </span>
-                    <span class="experiencetile-details-products">
-                        2 Angebote
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="home-tile">
-            <div class="experiencetile" data-equalizer-watch>
-                <a href="#" class="experiencetile-image">
-                    <img src="//placekitten.com/400/300"alt="title"/>
-                </a>
-                <a href="#" class="experiencetile-title">
-                    <h3>Title of the Exp.</h3>
-                </a>
-                <span class="experiencetile-owner">
-                    Modehaus Reinhard
-                </span>
-                <div class="experiencetile-details">
-                    <span class="experiencetile-details-date">
-                        31.02.2035
-                    </span>
-                    <span class="experiencetile-details-products">
-                        2 Angebote
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="home-tile">
-            <div class="experiencetile" data-equalizer-watch>
-                <a href="#" class="experiencetile-image">
-                    <img src="//placekitten.com/400/300"alt="title"/>
-                </a>
-                <a href="#" class="experiencetile-title">
-                    <h3>Title of the Exp.</h3>
-                </a>
-                <span class="experiencetile-owner">
-                    Modehaus Reinhard
-                </span>
-                <div class="experiencetile-details">
-                    <span class="experiencetile-details-date">
-                        31.02.2035
-                    </span>
-                    <span class="experiencetile-details-products">
-                        2 Angebote
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="home-tile">
-            <div class="experiencetile" data-equalizer-watch>
-                <a href="#" class="experiencetile-image">
-                    <img src="//placekitten.com/400/300"alt="title"/>
-                </a>
-                <a href="#" class="experiencetile-title">
-                    <h3>Title of the Exp.</h3>
-                </a>
-                <span class="experiencetile-owner">
-                    Modehaus Reinhard
-                </span>
-                <div class="experiencetile-details">
-                    <span class="experiencetile-details-date">
-                        31.02.2035
-                    </span>
-                    <span class="experiencetile-details-products">
-                        2 Angebote
-                    </span>
-                </div>
-            </div>
-        </div>
-        <div class="home-more">
-            <a href="#">Alle Erlebnisse anzeigen</a>
-        </div>
-    </div>
-</div>
 <div class="home home--background">
-    <div class="container container--default" data-equalizer data-equalize-on="medium">
-        <div class="home-title">
-            <h3>Heidenheim kennen lernen</h3>
-        </div>
-        <div class="home-tile">
-            <a href="#" class="articletile">
-                Titel
-
-            </a>
-
-        </div>
-        <div class="home-tile">
-            A
-
-        </div>
-        <div class="home-tile">
-            A
-
-        </div>
-        <div class="home-tile">
-            A
-
-        </div>
-        <div class="home-tile">
-            A
-
+        <div class="container container--default" data-equalizer data-equalize-on="medium">
+            <div class="home-title home-title--green">
+                <h3>Heidenheim entdecken</h3>
+            </div>
+            <div class="home-tile">
+                <div class="discovertile" data-equalizer-watch>
+                    <a class="discovertile-title">     
+                        <h4>Einkaufen</h4>
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Damenmode
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Herrenmode
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Kindermode
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Wäsche und Lingerie
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Schuhe, Taschen und Koffer
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Uhren und Schmuck
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Sport und Outdoor
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Parfümerie und Drogerie
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Haushalt, Heim und Hobby
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Dekorieren und Schenken
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Technik und Elektronik
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Lebensmittel und Spezialitäten
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Bücher-, Schreib und Spielwaren
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Möbel
+                    </a>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="discovertile" data-equalizer-watch>
+                    <a class="discovertile-title">
+                        <h4>Dienstleistungen</h4>
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Damenmode
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Herrenmode
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Kindermode
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Wäsche und Lingerie
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Schuhe, Taschen und Koffer
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Uhren und Schmuck
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Sport und Outdoor
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Parfümerie und Drogerie
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Haushalt, Heim und Hobby
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Dekorieren und Schenken
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Technik und Elektronik
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Lebensmittel und Spezialitäten
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Bücher-, Schreib und Spielwaren
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Möbel
+                    </a>
+                </div>
+            </div>
+            <div class="home-tile">
+                <div class="discovertile" data-equalizer-watch>
+                    <a class="discovertile-title">
+                        <h4>Dienstleistungen</h4>
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Imbiss & Snacks
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Cafés & Eiskafés
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Bars & Restaurants
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Übernachtung
+                    </a>
+                    <br>
+                    <a class="discovertile-title">
+                        <h4>Und viel mehr</h4>
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Parken
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Anfahrt
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Veranstaltungen
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        City Schexs
+                    </a>
+                    <a href="#" class="discovertile-categorie">
+                        Markenfinder
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="footer">
-    <div class="footer-inner">
-        <div class="container container--default">
-            <div class="footer-title">
-                Mit Unterstützung von
+    <div class="home">
+        <div class="container container--default" data-equalizer data-equalize-on="medium">
+            <div class="home-title">
+                <h3>Veranstaltungen</h3>
             </div>
-            <div class="footer-sponsors">
-                <a href="#">
-                    <img src="//placekitten.com/200/100" alt="Sponsor->title"/>
-                </a>
-                <a href="#">
-                    <img src="//placekitten.com/240/100" alt="Sponsor->title"/>
-                </a>
-                <a href="#">
-                    <img src="//placekitten.com/180/100" alt="Sponsor->title"/>
-                </a>
-                <a href="#">
-                    <img src="//placekitten.com/250/100" alt="Sponsor->title"/>
-                </a>
+            <div class="home-tile">
+                <div class="eventtile" data-equalizer-watch>
+                    <a href="#" class="eventtile-image">
+                        <img src="//placekitten.com/200/300" alt="title" />
+                    </a>
+                </div>
             </div>
-            <div class="footer-title">
-                Immer aktuell bleiben
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="eventtile-image">
+                        <img src="//placekitten.com/200/300" alt="title" />
+                    </a>
+                </div>
             </div>
-            <div class="footer-social">
-                <a href="#" class="footer-social-item">
-                    <div class="footer-social-item-icon">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                    <div class="footer-social-item-label">
-                        Facebook
-                    </div>
-                </a>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="eventtile-image">
+                        <img src="//placekitten.com/200/300" alt="title" />
+                    </a>
+                </div>
             </div>
-            <div class="footer-social">
-                <a href="#" class="footer-social-item">
-                    <div class="footer-social-item-icon">
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <div class="footer-social-item-label">
-                        Instagram
-                    </div>
-                </a>
+            <div class="home-tile">
+                <div class="experiencetile" data-equalizer-watch>
+                    <a href="#" class="eventtile-image">
+                        <img src="//placekitten.com/200/300" alt="title" />
+                    </a>
+                </div>
+            </div>
+            <div class="home-more">
+                <a href="#">Alle Artikel lesen</a>
             </div>
         </div>
     </div>
-    <div class="footer-end">
-        <div class="container container--default">
-            <ul class="footer-end-nav">
-                <li class="footer-end-nav-item">
-                    <a href="#">
-                        Mitmachen
-                    </a>
-                </li>
-                <li class="footer-end-nav-item">
-                    <a href="#">
-                        Feedback
-                    </a>
-                </li>
-                <li class="footer-end-nav-item">
-                    <a href="#">
-                        Über uns
-                    </a>
-                </li>
-                <li class="footer-end-nav-item">
-                    <a href="#">
-                        Kontakt
-                    </a>
-                </li>
-                <li class="footer-end-nav-item">
-                    <a href="#">
-                        Datenschutz
-                    </a>
-                </li>
-                <li class="footer-end-nav-item">
-                    <a href="#">
-                        Impressum
-                    </a>
-                </li>
-                <li class="footer-end-nav-item">
-                    2019
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
 
-<script
-        crossorigin="anonymous"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="container container--default">
+                <div class="footer-title">
+                    Mit Unterstützung von
+                </div>
+                <div class="footer-sponsors">
+                    <a href="#">
+                        <img src="//placekitten.com/200/100" alt="Sponsor->title" />
+                    </a>
+                    <a href="#">
+                        <img src="//placekitten.com/240/100" alt="Sponsor->title" />
+                    </a>
+                    <a href="#">
+                        <img src="//placekitten.com/180/100" alt="Sponsor->title" />
+                    </a>
+                    <a href="#">
+                        <img src="//placekitten.com/250/100" alt="Sponsor->title" />
+                    </a>
+                </div>
+                <div class="footer-title">
+                    Immer aktuell bleiben
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-item">
+                        <div class="footer-social-item-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="footer-social-item-label">
+                            Facebook
+                        </div>
+                    </a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-item">
+                        <div class="footer-social-item-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="footer-social-item-label">
+                            Instagram
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container container--default">
+                <ul class="footer-end-nav">
+                    <li class="footer-end-nav-item">
+                        <a href="#">
+                            Mitmachen
+                        </a>
+                    </li>
+                    <li class="footer-end-nav-item">
+                        <a href="#">
+                            Feedback
+                        </a>
+                    </li>
+                    <li class="footer-end-nav-item">
+                        <a href="#">
+                            Über uns
+                        </a>
+                    </li>
+                    <li class="footer-end-nav-item">
+                        <a href="#">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="footer-end-nav-item">
+                        <a href="#">
+                            Datenschutz
+                        </a>
+                    </li>
+                    <li class="footer-end-nav-item">
+                        <a href="#">
+                            Impressum
+                        </a>
+                    </li>
+                    <li class="footer-end-nav-item">
+                        2019
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script crossorigin="anonymous" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"></script>
-<script>
-    $(document).foundation();
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 
 
-<script src="https://kit.fontawesome.com/b758d7c863.js"></script>
+    <script src="https://kit.fontawesome.com/b758d7c863.js"></script>
 </body>
+
 </html>

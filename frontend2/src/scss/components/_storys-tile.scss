@@ -1,0 +1,29 @@
+//
+// tile for an experience
+//
+.storystile {
+  padding-bottom: $spacing;
+  &-image {
+    padding-bottom: $spacing;
+    display: block;
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: $global-radius;
+      @include breakpoint(medium) {
+        height: auto;
+      }
+    }
+  }
+  &-title {
+    color: $light-gray;
+  }
+
+  &-owner {
+    color: $light-gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
