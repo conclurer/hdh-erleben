@@ -104,10 +104,10 @@ $header-height-mobile: 70px;
 }
 
 // Navigation
-.navigation {
+.navigation { //ul
   list-style: none;
   margin: 0;
-  &-item {
+  &-item { //li
     padding: $spacing/2 0;
     a {
       display: block;
