@@ -2,17 +2,23 @@
 // tile for an experience
 //
 .discovertile {
-  padding-bottom: $spacing;
-  line-height: 2;
 
   &-title {
     color: $primary-color;
+    padding: $spacing 0;
+    display: block;
   }
 
   &-categorie {
-    color: $dark-gray;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    color: $black;
+    margin-right: 2px;
+    font-size: rem-calc(13);
+    @include breakpoint(large) {
+      display: block;
+      font-size: rem-calc(17);
+      background-color: transparent;
+      padding: $spacing/2 0;
+    }
   }
 }

@@ -2,11 +2,13 @@
 // Homepage elements
 //
 
-
 .home {
   padding-bottom: $spacing;
+
   &--background {
     background-color: $light-gray;
+  }
+  &--spaced {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -34,6 +36,13 @@
     }
   }
 
+  &-event {
+    @include grid-col(6);
+    padding-bottom: $spacing;
+    @include breakpoint(medium) {
+      @include grid-col(3);
+    }
+  }
   &-more {
     @include grid-col(12);
     padding: $spacing;
