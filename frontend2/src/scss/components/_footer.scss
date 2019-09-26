@@ -67,7 +67,9 @@
 
     @include breakpoint(medium) {
       @include grid-col(6);
-
+      &:not(:first-child) {
+        float: left;
+      }
     }
 
     &-item {
