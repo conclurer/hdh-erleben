@@ -1,0 +1,40 @@
+//
+// Experience page
+//
+.experience {
+
+  padding: 50px 0;
+
+
+  &-banner {
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+  }
+  &-inner {
+    @include grid-col(12);
+  }
+  &-date {
+    @include grid-col(12);
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+    @include breakpoint(medium) {
+      @include grid-col(6);
+    }
+  }
+  &-location {
+    @include grid-col(12);
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+    @include breakpoint(medium) {
+      @include grid-col(6);
+    }
+  }
+  &-icon {
+    font-size: 30px;
+    color: $primary-color;
+  }
+}
