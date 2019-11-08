@@ -50,3 +50,16 @@
     }
   }
 }
+
+.posterhead {
+  padding-top: $spacing*2;
+  &-inner {
+    padding: $spacing;
+    img {
+      width: 100%;
+    }
+  }
+  &-title {
+   @include text-hide();
+  }
+}

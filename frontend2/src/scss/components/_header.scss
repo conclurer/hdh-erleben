@@ -39,6 +39,7 @@ $header-height-mobile: 70px;
     }
     @include breakpoint(large) {
       padding: 0;
+      padding-left: $spacing;
       width: 20%;
       flex-grow: 1;
     }

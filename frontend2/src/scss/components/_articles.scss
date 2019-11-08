@@ -1,0 +1,59 @@
+//
+//
+//
+.articlelist {
+  padding: $spacing*2 0;
+
+  &-item {
+   @include grid-col(12);
+    margin-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      margin-bottom: 50px;
+    }
+  }
+  &-title {
+    @include grid-col(12);
+    margin-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      margin-bottom: 50px;
+    }
+  }
+}
+.article {
+
+  @include breakpoint(medium) {
+    display: flex;
+    align-items: stretch;
+  }
+  &-content {
+    @include breakpoint(medium) {
+      width: 50%;
+    }
+    @include breakpoint(large) {
+      width: 66%;
+    }
+  }
+  &-meta {
+
+    padding-top: $spacing;
+    @include breakpoint(medium) {
+      width: 50%;
+    }
+    @include breakpoint(large) {
+      width: 34%;
+    }
+    &-actions {
+      text-align: center;
+      @include breakpoint(medium) {
+        text-align: left;
+      }
+      .button {
+        margin-bottom: $spacing;
+        @include breakpoint(medium) {
+          margin-bottom: 0;
+          margin-right: $spacing;
+        }
+      }
+    }
+  }
+}

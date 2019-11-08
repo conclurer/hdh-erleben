@@ -4,22 +4,22 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: 280px;
+  min-height: 260px;
 
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center center;
 
   @include breakpoint(medium) {
-    height: 320px;
+    height: 300px;
   }
 
   @include breakpoint(large) {
-    height: 450px;
+    height: 350px;
   }
 
-  @include breakpoint(large) {
-    height: 580px;
+  @include breakpoint(xlarge) {
+    height: 380px;
     margin:0 auto;
     margin-bottom: $spacing*2;
     max-width: rem-calc(1600);
