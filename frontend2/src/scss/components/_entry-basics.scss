@@ -171,6 +171,12 @@
   }
 }
 
+.entryarticle {
+  padding: $spacing*2 0;
+  @include breakpoint(large) {
+    padding: $spacing*4 0;
+  }
+}
 
 .cityschex {
   display: flex;

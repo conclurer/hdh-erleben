@@ -20,7 +20,13 @@
   }
 }
 .article {
+  width: 100%;
 
+  &--has-background {
+    background-color: $light-gray;
+    padding: $spacing;
+    border-radius: $global-radius;
+  }
   @include breakpoint(medium) {
     display: flex;
     align-items: stretch;
@@ -50,7 +56,6 @@
       .button {
         margin-bottom: $spacing;
         @include breakpoint(medium) {
-          margin-bottom: 0;
           margin-right: $spacing;
         }
       }
