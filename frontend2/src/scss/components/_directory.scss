@@ -7,6 +7,9 @@
     @include grid-col(12);
     padding-top: $spacing*2;
     padding-bottom: $spacing*2;
+    h1,h2 {
+      font-size: rem-calc(21);
+    }
   }
   &-category {
     @include grid-col(12);
