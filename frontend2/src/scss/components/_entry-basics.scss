@@ -41,6 +41,23 @@
       @include hidden();
     }
   }
+  &-brands {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 0;
+    margin-bottom: $spacing*4;
+    &-title {
+      width: 100%;
+      font-weight: $global-weight-bold;
+    }
+    &-item {
+      margin-right: $spacing;
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
 }
 
 .entrylink {
