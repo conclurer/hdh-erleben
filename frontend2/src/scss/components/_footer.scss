@@ -2,12 +2,13 @@
 // Footer
 //
 .footer {
-  background-color: $light-gray;
+  background-color: $white;
+  border-top: 1px solid $medium-gray;
   &-inner {
     padding: $spacing*2 0;
   }
   &-end {
-    border-top: 1px solid $medium-gray;
+    background-color: $light-gray;
     padding: $spacing*2 0;
     &-nav {
       margin: 0;
@@ -73,7 +74,7 @@
     }
 
     &-item {
-      background-color: $white;
+      background-color: $light-gray;
       border-radius: $global-radius;
       display: flex;
       align-items: center;
