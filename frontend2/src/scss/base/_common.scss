@@ -46,3 +46,10 @@ p a {
     z-index: $z-index-skyscraper;
   }
 }
+
+.heading-inline {
+  display: inline;
+  font-size: rem-calc(14);
+  color: $medium-gray;
+  text-decoration: underline;
+}

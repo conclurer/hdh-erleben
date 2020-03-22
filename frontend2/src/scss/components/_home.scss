@@ -53,3 +53,36 @@
     }
   }
 }
+
+.livehome {
+  margin-bottom: $spacing;
+  padding: $spacing;
+  background-color: $light-gray;
+  .entryhead-live-shows {
+    border-bottom: none !important;
+  }
+  @include breakpoint(medium) {
+    padding: $spacing*3;
+    margin-bottom: $spacing*2;
+  }
+  @include breakpoint(large) {
+    .entryhead-live-shows {
+      max-height: 418px;
+    }
+  }
+  &-info {
+    margin: $spacing 0;
+    padding: $spacing;
+    background-color: $white;
+    border-radius: $global-radius;
+    @include breakpoint(small only) {
+      visibility: hidden;
+      height: 0;
+    }
+    h1 {
+      font-size: rem-calc(17);
+      display: inline;
+      margin-bottom: 0;
+    }
+  }
+}

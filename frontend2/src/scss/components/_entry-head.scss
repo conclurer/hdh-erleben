@@ -28,12 +28,12 @@
     align-items: flex-start;
 
     position: relative;
+
     iframe {
       position: absolute;
       top:0;
       left:0;
       bottom:0;
-      right:0;
       width:100%;
       height:100%;
     }
@@ -128,6 +128,80 @@
     @include breakpoint(medium) {
       width: 100%;
       height: 50%;
+    }
+  }
+
+  // Live mods
+  &-live {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    @include breakpoint(medium) {
+      padding-left: $spacing;
+    }
+
+    &-actions {
+      padding: $spacing 0;
+    }
+    &-meta {
+      padding: $spacing;
+      width: 100%;
+      padding-top: $spacing*2;
+      img {
+        width: 100px;
+        height: auto;
+        margin-bottom: $spacing;
+      }
+      h1 {
+        visibility: hidden;
+        font-size: rem-calc(22);
+        height: 0;
+      }
+    }
+    &-shows {
+      max-height: 105px;
+      overflow-y: auto;
+      width: 100%;
+      @include breakpoint(small only) {
+       border-bottom: 1px solid $accent-color;
+      }
+      &-title {
+        color: $dark-gray;
+        padding: 0 $spacing;
+        @include breakpoint(small only) {
+          @include hidden();
+        }
+      }
+      @include breakpoint(medium) {
+        max-height: 220px;
+      }
+      @include breakpoint(medium) {
+        max-height: 320px;
+      }
+      &-entry {
+        border-top: 1px solid $accent-color;
+        padding: $spacing;
+        position: relative;
+        width: 100%;
+        &-title {
+
+        }
+        &-time {
+          font-weight: $global-weight-bold;
+        }
+        &-owner {
+          font-size: $small-font-size;
+          color: $dark-gray;
+        }
+        &-addcal {
+          position: absolute;
+          right: $spacing;
+          top: $spacing;
+          color: $primary-color;
+        }
+      }
     }
   }
 }

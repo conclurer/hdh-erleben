@@ -1,0 +1,12 @@
+//
+// Entry order
+//
+.entry-order {
+
+  &-inner {
+    padding-top: $spacing*2;
+  }
+  &-title {
+    @include grid-col(12);
+  }
+}
