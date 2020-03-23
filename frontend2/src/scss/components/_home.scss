@@ -86,3 +86,16 @@
     }
   }
 }
+
+
+.globalnotice {
+  background-color: $light-gray;
+  padding: $spacing;
+  color: $black;
+  font-size:$small-font-size;
+
+  @include breakpoint(medium) {
+    padding: $spacing*2;
+    font-size: rem-calc(17);
+  }
+}
