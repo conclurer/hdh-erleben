@@ -4,22 +4,24 @@
 .hero {
   position: relative;
   width: 100%;
-  min-height: 260px;
+  min-height: 380px; //260px;
 
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center center;
 
+  background-color: $primary-color;
+
   @include breakpoint(medium) {
-    height: 300px;
+    height: 400px;//300px;
   }
 
   @include breakpoint(large) {
-    height: 350px;
+    height: 420px;//350px;
   }
 
   @include breakpoint(xlarge) {
-    height: 380px;
+    height: 420px; //380px;
     margin:0 auto;
     margin-bottom: $spacing*2;
     max-width: rem-calc(1600);
@@ -35,11 +37,11 @@
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; //was center
 
     padding: $spacing*2 $spacing;
 
-    text-align: center;
+    text-align: left;//center;
 
     @include breakpoint(medium) {
       text-align: left;
@@ -70,7 +72,17 @@
     width: 100%;
 
     @include breakpoint(medium) {
-      max-width: rem-calc(730);
+      //max-width: rem-calc(730);
+      max-width: rem-calc(1280);
+    }
+    @include breakpoint(large) {
+      //padding-right: 25%;
+      p,.search {
+        max-width: rem-calc(720);
+      }
+    }
+    @include breakpoint(xlarge) {
+      //padding-right: 34%;
     }
 
     h1 {
@@ -112,6 +124,9 @@
         transition:.1s;
         &:hover {
           opacity: 1;
+          a {
+            color: $black;
+          }
         }
       }
     }
