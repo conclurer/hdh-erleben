@@ -73,7 +73,7 @@
 
     @include breakpoint(medium) {
       //max-width: rem-calc(730);
-      max-width: rem-calc(1280);
+      max-width: rem-calc($base-container-width);
     }
     @include breakpoint(large) {
       //padding-right: 25%;
