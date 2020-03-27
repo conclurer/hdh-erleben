@@ -44,6 +44,7 @@
     padding-top: $spacing;
     @include breakpoint(medium) {
       width: 50%;
+      padding-left: $spacing;
     }
     @include breakpoint(large) {
       width: 34%;
