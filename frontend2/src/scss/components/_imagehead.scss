@@ -60,6 +60,7 @@
     }
   }
   &-title {
-   @include text-hide();
+   //@include text-hide();
+    padding: $spacing 0;
   }
 }
