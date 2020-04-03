@@ -1,0 +1,55 @@
+
+//
+//   Common used CSS
+//
+html {
+  background-color: $light-gray;
+}
+body {
+  font-size: rem-calc(17);
+  background-color: $white;
+}
+a {
+  color: inherit;
+}
+
+p a {
+  color: $primary-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+//Visibility
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0;
+}
+.visible {
+  display: inline-block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.scrolltest {
+  display: block;
+  width: 10px;
+  height: 2000px;
+  background-color: $alert-color;
+}
+
+.sticky {
+  @include breakpoint(large) {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: $z-index-skyscraper;
+  }
+}
+
+.heading-inline {
+  display: inline;
+  font-size: rem-calc(14);
+  color: $medium-gray;
+  text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+//
+// Container for widths
+//
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: rem-calc(1280);
+
+  @include clearfix();
+
+  &--default {
+    margin: 0 auto;
+    width: 100%;
+    max-width: rem-calc($base-container-width);
+  }
+
+  &--slim {
+    margin: 0 auto;
+    width: 100%;
+    max-width: rem-calc(730);
+  }
+
+  &--center {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+.inner {
+  @include grid-col(12);
+}
