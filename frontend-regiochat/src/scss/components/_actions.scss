@@ -1,0 +1,25 @@
+//
+// Actions, list of button
+//
+.actions {
+  display: flex;
+  flex-direction: column;
+  @include grid-col(12);
+  padding-bottom: $spacing;
+
+  & > .button {
+    display: block;
+    margin-bottom: $spacing;
+    text-align: left;
+  }
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+
+    & > .button {
+      display: inline-block;
+      margin-bottom: 0;
+      margin-right: $spacing;
+    }
+  }
+}

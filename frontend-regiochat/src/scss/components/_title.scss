@@ -1,0 +1,13 @@
+//
+// Title
+//
+
+.title {
+  @include grid-col(12);
+  padding-top: $spacing;
+  padding-bottom: $spacing;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

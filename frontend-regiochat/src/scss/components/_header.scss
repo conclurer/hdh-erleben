@@ -1,0 +1,25 @@
+
+
+.head {
+
+  &--dark {
+    background-color: $primary-color;
+    color: $accent-color;
+
+    h1,h2 {
+      color: $white;
+    }
+    a:hover {
+      color: $white;
+    }
+    .button.primary:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: $spacing;
+}

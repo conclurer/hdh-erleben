@@ -2,13 +2,33 @@
 // Overwrites Foundation
 //
 .button.primary, .button {
-  color: $white;
+  color: $black;
+  background-color: $warning-color;
   @include breakpoint(medium) {
     &:hover {
-      color: $white;
-      background-color: #D62B00;
+      color: $black;
+      background-color: $accent-color;
     }
   }
+}
+.button {
+  text-decoration: none;
+}
+.button svg {
+  margin-right: $spacing*2;
+}
+.button.secondary {
+  color: $accent-color;
+  @include breakpoint(medium) {
+    &:hover {
+      color: $accent-color;
+      background-color: #1A936F;
+    }
+  }
+}
+.button.reduced {
+  background-color: rgba($accent-color,.2);
+  color: $accent-color;
 }
 .button-separator {
   height: 40px;

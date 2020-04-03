@@ -7,10 +7,14 @@ html {
 }
 body {
   font-size: rem-calc(17);
-  background-color: $white;
 }
-a {
+body.dark {
+    background-color: $primary-color;
+  min-height: 100vh;
+}
+a,button {
   color: inherit;
+  text-decoration: underline;
 }
 
 p a {
@@ -45,11 +49,4 @@ p a {
     width: 100%;
     z-index: $z-index-skyscraper;
   }
-}
-
-.heading-inline {
-  display: inline;
-  font-size: rem-calc(14);
-  color: $medium-gray;
-  text-decoration: underline;
 }

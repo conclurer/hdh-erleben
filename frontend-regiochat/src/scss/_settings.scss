@@ -46,7 +46,7 @@
 // ---------
 
 // Spacing and Heights
-$spacing : 10px;
+$spacing : 12px;
 
 // Z-Index
 $z-index-default : 1;
@@ -112,8 +112,8 @@ $breakpoint-classes: (small medium large);
 $grid-row-width: $global-width;
 $grid-column-count: 12;
 $grid-column-gutter: (
-        small: 20px,
-        medium: 20px,
+        small: 12px,
+        medium: 24px,
 );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
@@ -127,18 +127,18 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, Courier, monospace;
 $header-styles: (
         small: (
-                'h1': ('font-size': 30),
-                'h2': ('font-size': 21),
+                'h1': ('font-size': 25),
+                'h2': ('font-size': 24),
                 'h3': ('font-size': 17),
                 'h4': ('font-size': 17),
                 'h5': ('font-size': 17),
                 'h6': ('font-size': 17),
         ),
         medium: (
-                'h1': ('font-size': 35),
-                'h2': ('font-size': 21),
-                'h3': ('font-size': 21),
-                'h4': ('font-size': 17),
+                'h1': ('font-size': 32),
+                'h2': ('font-size': 28),
+                'h3': ('font-size': 22),
+                'h4': ('font-size': 22),
                 'h5': ('font-size': 17),
                 'h6': ('font-size': 17),
         ),

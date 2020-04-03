@@ -1,0 +1,19 @@
+//
+// Poster, image head or live feed above anything
+//
+.poster {
+  @include grid-col(12);
+  padding-bottom: $spacing;
+  padding-top: $spacing;
+  &-live {
+    video {
+      border-radius: $global-radius;
+    }
+  }
+  &-image {
+
+    img {
+      border-radius: $global-radius;
+    }
+  }
+}
