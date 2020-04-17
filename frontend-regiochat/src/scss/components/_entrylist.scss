@@ -1,0 +1,50 @@
+//
+// Entry list and preview
+//
+.entrylist {
+  padding-top: $spacing;
+
+  &-item {
+    @include grid-col(12);
+    padding-bottom: $spacing;
+    @include breakpoint(compact) {
+      @include grid-col(6);
+      padding-bottom: $spacing*2;
+    }
+    &:last-child:not(:first-child) {
+      float: left;
+    }
+  }
+}
+
+.entrypreview {
+  img {
+    border-radius: $global-radius;
+    margin-bottom: $spacing;
+  }
+  h3 {
+    color: $primary-color;
+    width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  a {
+    text-decoration: none;
+  }
+  &-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      color: $warning-color;
+    }
+  }
+  &-action {
+    @include hidden();
+    @include breakpoint(medium) {
+      display: inline-block;
+      visibility: visible;
+    }
+  }
+}

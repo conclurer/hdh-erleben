@@ -1,0 +1,21 @@
+//
+// Panel (Admin area for entries)
+//
+.checkout {
+  padding-top: $spacing;
+  &-items {
+    @include grid-col(12);
+    @include breakpoint(large) {
+      @include grid-col(5);
+    }
+  }
+  &-form {
+    @include grid-col(12);
+    @include breakpoint(large) {
+      @include grid-col(7);
+    }
+  }
+  &-amount {
+    padding-top: $spacing;
+  }
+}

@@ -1,0 +1,72 @@
+//
+// Items (e.g. products to sell
+//
+.item {
+
+}
+
+.itempreview {
+  display: block;
+  width: 100%;
+  height: 225px;
+  background-color: $dark-gray;
+  background-position:center center;
+  background-size:cover;
+
+  border-radius: $global-radius;
+
+  position: relative;
+
+  @include breakpoint(compact) {
+    height: 300px;
+  }
+  @include breakpoint(medium) {
+    height: 350px;
+  }
+  @include breakpoint(large) {
+    height: 375px;
+  }
+
+  &-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 34%, rgba(0, 0, 0, 0.6) 100%);
+    border-radius: $global-radius;
+    padding: $spacing;
+    color: $white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    @include breakpoint(large) {
+      transition:all .2s;
+      &:hover {
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 34%, rgba($secondary-color,.5) 100%);
+      }
+    }
+  }
+  &-title {
+
+    h3 {
+      line-height: 1.225;
+      padding-bottom: $spacing/2;
+    }
+    @include breakpoint(compact) {
+
+    }
+    @include breakpoint(large) {
+      padding-bottom: $spacing;
+    }
+    small {
+      display: block;
+    }
+  }
+  &-action {
+    @include hidden();
+
+  }
+}

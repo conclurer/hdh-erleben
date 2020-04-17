@@ -1,0 +1,24 @@
+//
+// Footer
+//
+.footer {
+  padding: $spacing;
+  ul {
+    list-style: none;
+    margin-left: 0;
+    li {
+      opacity: .5;
+    }
+    @include breakpoint(medium) {
+      display: flex;
+      align-items: center;
+      padding: $spacing;
+      li {
+        margin-right: $spacing;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

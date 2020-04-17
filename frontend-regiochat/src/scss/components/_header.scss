@@ -6,8 +6,16 @@
     background-color: $primary-color;
     color: $accent-color;
 
+    padding-bottom: $spacing;
     h1,h2 {
       color: $white;
+    }
+    a {
+      color: $white;
+      //text-decoration: underline;
+    }
+    p a {
+      text-decoration: underline;
     }
     a:hover {
       color: $white;
@@ -16,10 +24,53 @@
       background-color: $white;
       color: $black;
     }
+
+  }
+
+  // Hero (e.g. for homepage
+  &--hero {
+    background-color: $primary-color;
+    color: $white;
+    padding: $spacing;
+    padding-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      border-radius: $global-radius;
+      padding: $spacing*3;
+      width: 100%;
+      max-width: rem-calc(960);
+      margin:0 auto;
+      .title h1,h2{
+        max-width: 60%;
+      }
+    }
+    h1,h2 {
+      color: $white;
+    }
+    a {
+      color: $white;
+    }
+    @include breakpoint(large) {
+      padding-top: $spacing*4;
+      padding-bottom: $spacing*4;
+    }
   }
 }
 .header {
   display: flex;
   align-items: center;
   padding: $spacing;
+
+  &--is-alone {
+    padding-top: $spacing*2;
+    padding-bottom: $spacing*2;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.subline {
+  @include grid-col(12);
+  padding-top: $spacing;
 }

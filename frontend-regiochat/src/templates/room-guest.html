@@ -23,20 +23,61 @@
         <div class="title">
             <h1>Room Name</h1>
         </div>
-        <div class="stream stream--guest">
-            <div class="stream-view stream-view--host">
-                Video goes here
+        <div class="videoroom">
+            <div class="videoroom-stream videoroom-stream--host">
+                <div class="videoroom-hostnote">
+                        <i class="far fa-clock"></i>
+                    <h3>Einen Moment bitte..</h3>
+                    <p>Hier steht ein Text aus dem CMS für die Abwesenheit</p>
+                </div>
+                <video class="hidden" src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls>
+                </video>
             </div>
-            <div class="stream-view stream-view--guest">
-                guest goes here
+            <div class="videoroom-stream videoroom-stream--guests">
+                <video src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls>
+                </video>
+                <video src="https://mdn.github.io/learning-area/html/multimedia-and-embedding/video-and-audio-content/rabbit320.webm" controls>
+                </video>
             </div>
         </div>
-        <div class="controls">
-            Floating controls here
+        <div class="videoroom-setup">
+            <div class="actions">
+                <a href="#" class="button full primary">
+                    <i class="far fa-video"></i>
+                    Mit Video anrufen
+                </a>
+                <a href="#" class="button full reduced">
+                    <i class="far fa-phone"></i>
+                    Nur Audio bitte
+                </a>
+                <a href="#" class="button hidden full reduced">
+                    <i class="far fa-comment"></i>
+                    Chat starten
+                </a>
+            </div>
         </div>
     </div>
 </div>
 
+<div class="controls">
+    <div class="controls-bar">
+        <div class="controls-item">
+                    <span class="controls-item-action">
+                        <i class="far fa-video"></i>
+                    </span>
+        </div>
+        <div class="controls-item controls-item--off">
+                    <span class="controls-item-action">
+                        <i class="far fa-microphone"></i>
+                    </span>
+        </div>
+        <div class="controls-item controls-item--warning">
+                    <span class="controls-item-action">
+                        <i class="far fa-lock"></i>
+                    </span>
+        </div>
+    </div>
+</div>
 <script
         crossorigin="anonymous"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

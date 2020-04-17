@@ -1,0 +1,12 @@
+//
+//
+//
+.page {
+
+  &-divider {
+    padding-top: $spacing*2;
+    margin-top: $spacing*2;
+    display: block;
+    border-top: 2px solid darken($accent-color,5%);
+  }
+}

@@ -1,0 +1,34 @@
+//
+// Search
+//
+
+.searchbar {
+  @include grid-col(12);
+
+  @include breakpoint(medium) {
+    display: flex;
+    align-items: center;
+  }
+  &-input {
+
+    input {
+      margin-bottom: $spacing;
+    }
+    @include breakpoint(medium) {
+      width: 40%;
+      margin-right: $spacing;
+      input {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-action {
+    .button {
+      display: block;
+      text-align: left;
+      @include breakpoint(medium) {
+        height: 52px;
+      }
+    }
+  }
+}

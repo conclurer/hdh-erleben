@@ -1,0 +1,83 @@
+//
+// Stream layouts
+//
+.videoroom {
+  @include grid-col(12);
+
+  &-stream {
+
+    //General videos
+    video {
+      object-fit: cover;
+      border-radius: $global-radius;
+      transform: rotateY(180deg); //Mirror image
+    }
+
+    &--host {
+      width: 100%;
+      padding-bottom: 75%;
+      position: relative;
+      background-color: rgba($white,.1);
+      border-radius: $global-radius;
+
+      @include breakpoint(compact) {
+        padding-bottom: 62%;
+      }
+      @include breakpoint(medium) {
+        padding-bottom: 56.25%; //16:9 ration
+      }
+      video {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--guests {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      margin-left: -$spacing/2;
+      margin-right: -$spacing/2;
+      video {
+        //flex-grow: 1;
+        width: 120px;
+        height: 120px;
+        margin: $spacing/2;
+      }
+    }
+  }
+
+  &-hostnote {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    padding: $spacing;
+    padding-top: 22.5%;
+    @include breakpoint(medium) {
+      padding: $spacing*4;
+      padding-top: 22.5%;
+    }
+    .far {
+      font-size: 36px;
+    }
+  }
+  &-setup {
+    @include grid-col(12);
+    padding-top: $spacing;
+    padding-bottom: $spacing;
+
+    @include breakpoint(medium) {
+      margin-left: -$spacing;
+      margin-right: $spacing;
+    }
+    .actions {
+      @include breakpoint(medium) {
+        justify-content: center;
+      }
+    }
+  }
+}

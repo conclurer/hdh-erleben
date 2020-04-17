@@ -28,3 +28,9 @@
 .inner {
   @include grid-col(12);
 }
+
+.live .container {
+  @include breakpoint(large) {
+    max-width: 90%;
+  }
+}

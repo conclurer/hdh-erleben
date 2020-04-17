@@ -7,6 +7,11 @@
   padding-top: $spacing;
   padding-bottom: $spacing;
 
+  @include breakpoint(medium) {
+    p {
+      padding-right: 20%;
+    }
+  }
   p:last-child {
     margin-bottom: 0;
   }

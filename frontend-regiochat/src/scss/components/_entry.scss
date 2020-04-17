@@ -1,0 +1,42 @@
+
+.entry {
+  padding-top: $spacing;
+  @include breakpoint(medium) {
+    padding-top: $spacing*2;
+  }
+  &-side {
+    @include grid-col(12);
+    @include breakpoint(large) {
+      @include grid-col(4);
+    }
+  }
+  &-content {
+    @include grid-col(12);
+    @include breakpoint(large) {
+      @include grid-col(8);
+    }
+  }
+
+  &-showroom {
+    padding-top: $spacing;
+    @include breakpoint(medium) {
+      padding-top: $spacing*2;
+    }
+
+    &-item {
+      @include grid-col(6);
+      padding-bottom: $spacing;
+      @include breakpoint(growing) {
+        @include grid-col(4);
+      }
+      @include breakpoint(large) {
+        //@include grid-col(3);
+      }
+
+      &:last-child:not(:first-child) {
+        float: left;
+      }
+    }
+
+  }
+}

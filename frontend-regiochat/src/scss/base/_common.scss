@@ -23,6 +23,18 @@ p a {
     text-decoration: underline;
   }
 }
+
+h2 {
+  color: $primary-color;
+}
+small {
+  opacity: .75;
+  font-size: rem-calc(13);
+  line-height: 1.1 !important;
+}
+label strong {
+  font-weight: $global-weight-normal;
+}
 //Visibility
 .hidden {
   display: none !important;
@@ -48,5 +60,37 @@ p a {
     top: 0;
     width: 100%;
     z-index: $z-index-skyscraper;
+  }
+}
+
+// Form Builder reworks
+.InputfieldHidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+.Inputfield p.notes {
+  margin-top: -$spacing/2;
+  opacity: .67;
+}
+.Inputfield .editor-statusbar {
+  @include hidden();
+}
+.Inputfield .editor-toolbar {
+  a.fa-picture-o,
+  a.fa-eye,
+  a.fa-columns,
+  a.fa-arrows-alt,
+  a.fa-table,
+  a.fa-code,
+  a.fa-list-ol
+  {
+    @include hidden();
+  }
+}
+.FormBuilder {
+  padding-top: $spacing;
+  @include breakpoint(medium) {
+    padding-top: 0;
   }
 }
