@@ -1,0 +1,116 @@
+//
+// Search results
+//
+.results {
+  padding-top: $spacing*2;
+  &-filter {
+    @include grid-col(12);
+    padding-bottom: $spacing;
+    @include breakpoint(medium) {
+      @include grid-col(3);
+    }
+    @include breakpoint(large) {
+      @include grid-col(4);
+    }
+
+    &-toggle {
+      display: inline-block;
+      width: 100%;
+      @include breakpoint(medium) {
+        @include hidden();
+      }
+    }
+    &-form {
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .2s;
+
+      &--active {
+        height: auto;
+        overflow: auto;
+        opacity: 1;
+        border: 1px solid $medium-gray;
+        margin-top: $spacing;
+        border-radius: $global-radius;
+        padding: $spacing;
+      }
+      @include breakpoint(medium) {
+        height: auto;
+        overflow: auto;
+        opacity: 1;
+        border: none;
+        padding: 0;
+        padding-top: 25px;
+      }
+
+      label {
+        font-weight: $global-weight-bold;
+      }
+    }
+  }
+
+  &-list {
+    @include grid-col(12);
+    padding-bottom: $spacing*2;
+    @include breakpoint(medium) {
+      @include grid-col(9);
+    }
+    @include breakpoint(large) {
+      @include grid-col(8);
+    }
+
+    &-item {
+      margin-top: $spacing;
+      padding-top: $spacing;
+      border-top: 1px solid $medium-gray;
+      display: flex;
+      flex-direction: column-reverse;
+
+      @include breakpoint(medium) {
+        flex-direction: row;
+        align-items: center;
+      }
+      &:hover {
+        color: inherit;
+      }
+      h3 {
+        color: $primary-color;
+      }
+      &-note {
+        color: $dark-gray;
+      }
+
+      &-image {
+        padding-bottom: $spacing;
+        img {
+          width: 72px;
+          height: 72px;
+          object-fit: cover;
+          border-radius: $global-radius;
+        }
+
+        @include breakpoint(medium) {
+          padding-left: $spacing*2;
+          min-width: 170px;
+          flex-grow: 1;
+          img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+
+  &-checks {
+    list-style: none;
+    margin-left: 0;
+    label {
+      font-weight: $global-weight-normal;
+    }
+    input {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -54,13 +54,146 @@
         </div>
     </div>
 </div>
-
-<div class="directory">
+<div class="results">
     <div class="container container--default">
-        <div class="directory-zero">
-            <h3>Keine Ergebnisse</h3>
-            <p>Ihre Anfrage nach {Suchbegriff} ergab keine Treffer.</p>
-            <a href="#entdecken">Alles anzeigen</a>
+        <div class="results-filter">
+            <a href="#filters" class="button medium results-filter-toggle" data-toggle="results-filter-control">
+                Filter (0)
+            </a>
+            <form class="results-filter-form" data-toggler=".results-filter-form--active" id="results-filter-control">
+                <div class="results-filter-form-group">
+                    <label>
+                        Zeige nur
+                    </label>
+                    <ul class="results-checks">
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Händler & Einträge
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Produkte
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Erlebnisse
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="results-filter-form-group">
+                    <label>Services</label>
+                    <ul class="results-checks">
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Ist H.D.H.-Mitglied
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Akzeptiert City-SCHEXS
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="results-filter-form-group">
+                    <label>
+                        Kategorie
+                    </label>
+                    <ul class="results-checks">
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Einzelhandel
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Service
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Gastronomie
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="results-filter-form-group">
+                    <label>
+                        Warengruppe
+                        <!-- Nur zeigen wenn bereits ein bereich gewählt wurde? Oder einfach alle? Keine Ahnung !-->
+                    </label>
+                    <ul class="results-checks">
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Einzelhandel
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Dienstleistungen
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"/>
+                                Gastronomie
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <button type="submit" class="button">
+                    Filtern
+                </button>
+            </form>
+        </div>
+        <div class="results-list">
+            <h3>Ergebnisse</h3>
+            <a href="#" class="results-list-item">
+                <div class="results-list-item-meta">
+                    <h3>Title oder Headline der Page</h3>
+                    <span class="results-list-item-note">
+                        Alternatives Feld, entweder der Preis, der nächste Termin, oder die Subline des Ladens
+                    </span>
+                </div>
+                <div class="results-list-item-image">
+                    <img src="//placekitten.com/200/200" alt="Title der Page"/>
+                </div>
+            </a>
+            <a href="#" class="results-list-item">
+                <div class="results-list-item-meta">
+                    <h3>Title oder Headline der Page</h3>
+                    <span class="results-list-item-note">
+                        Alternatives Feld, entweder der Preis, der nächste Termin, oder die Subline des Ladens
+                    </span>
+                </div>
+                <div class="results-list-item-image">
+                    <img src="//placekitten.com/200/200" alt="Title der Page"/>
+                </div>
+            </a>
+            <a href="#" class="results-list-item">
+                <div class="results-list-item-meta">
+                    <h3>Title oder Headline der Page</h3>
+                    <span class="results-list-item-note">
+                        Alternatives Feld, entweder der Preis, der nächste Termin, oder die Subline des Ladens
+                    </span>
+                </div>
+                <div class="results-list-item-image">
+                    <img src="//placekitten.com/200/200" alt="Title der Page"/>
+                </div>
+            </a>
         </div>
     </div>
 </div>
