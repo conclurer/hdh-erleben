@@ -81,6 +81,10 @@
         color: $dark-gray;
       }
 
+      &-meta {
+        flex-grow: 1;
+        width: 100%;
+      }
       &-image {
         padding-bottom: $spacing;
         img {
